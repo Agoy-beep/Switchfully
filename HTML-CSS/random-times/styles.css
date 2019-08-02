@@ -1,0 +1,77 @@
+/* Removing white spaces of webpage*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #736F6E;
+  font-family: "News Gothic MT", "Arial", sans-serif;
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+header {
+
+  background-color: #736F6E;
+
+  width: 80%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.maintitle {
+  flex: 3;
+  text-align: left;
+  border: 1px solid #736F6E;
+
+  display: flex;
+  justify-content: flex-start;
+}
+.date {
+  flex: 1;
+  justify-content: flex-end;
+}
+nav {
+  width: 80%;
+  padding: 20px 0px 10px 0px;
+
+  display: flex;
+
+}
+.button:link,
+.button:visited {
+
+  text-decoration: none;
+
+  color: #000000;
+  background-color: #FFFFC2;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 30px 15px 30px 15px;
+
+  width: 120px;
+}
+.button:hover,
+.button:visited:hover {
+  font-size: 20px;
+}
+
+.button:active,
+.button:visited:active {
+  color: #000000;
+  background-color: #FEFCFF;
+}
+article {
+  width: 80%;
+  padding: 20px 10px 20px 10px;
+  background-color: #FEFCFF;
+  border-radius: 30px 15px 30px 15px;
+}
+.intro_bullet {
+  padding: 20px;
+}
