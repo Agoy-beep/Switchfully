@@ -1,0 +1,151 @@
+/* Removing white spaces of webpage*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 50px;
+  background-color: #736F6E;
+  font-family: "News Gothic MT", "Arial", sans-serif;
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+header {
+
+  background-color: #cce0ff;
+
+  width: 80%;
+  padding-top: 30px;
+  padding-left: 10px;
+  border-radius: 10px;
+
+
+  display: flex;
+  align-items: baseline;
+}
+.maintitle {
+  flex:3;
+}
+.date {
+  flex: 1;
+  font-size: 0.8em;
+}
+
+
+.intlinks {
+  width: 100%;
+  padding: 20px 0px 10px 0px;
+
+  display: flex;
+
+}
+.button:link,
+.button:visited {
+
+  text-decoration: none;
+
+  color: #000000;
+  background-color: #FFFFC2;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 30px 15px 30px 15px;
+
+  width: 120px;
+}
+.button:hover,
+.button:visited:hover {
+  font-size: 20px;
+}
+
+.button:active,
+.button:visited:active {
+  color: #000000;
+  background-color: #FEFCFF;
+}
+
+article {
+  width: 70%;
+  padding: 20px 10px 20px 10px;
+  background-color: #FEFCFF;
+  border-radius: 30px 15px 30px 15px;
+
+
+}
+.intro_bullet {
+  padding: 20px;
+}
+/* Flex Container*/
+.extlinks-container {
+
+
+  display: flex;
+  /*This does nothing*/
+  justify-content: center;
+  align-items: center;
+
+}
+/*First Layer of flex Item?*/
+
+.extlinks {
+  width: 200px;
+  height: 250px;
+
+  /*This manipulates the spacing of the buttons correctly*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+/*Flex Items*/
+.extlinkbutton:link,
+.extlinkbutton:visited {
+
+  background-color: #c2f0c2;
+  border-radius: 10px;
+  text-decoration: none;
+  /*Doesn't work? (only works when disabling flex)*/
+  text-align: center;
+
+  display: flex;
+  /*This manipulates text alignment*/
+  /*Horizontal*/
+  justify-content: space-around;
+  /*Vertical*/
+  align-items: center;
+
+  width: 180px;
+  height: 50px;
+}
+
+.extlinkbutton:hover,
+.extlinkbutton:visited:hover {
+  font-size: 20px;
+}
+
+.extlinkbutton:active,
+.extlinkbutton:visited:active {
+  color: #000000;
+  background-color: #FEFCFF;
+}
+
+footer {
+  background-color: #dfbf9f;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size:0.6em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+
+}
