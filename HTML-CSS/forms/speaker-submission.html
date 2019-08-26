@@ -11,6 +11,7 @@
       <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
     </header>
     <form class="speaker-form" action="" method="get">
+      <!--'form-row' because each seperate one is a row in the form :p-->
         <div class='form-row'>
           <label for='full-name'>Name</label>
           <input id='full-name' name='full-name' type='text'/>
@@ -19,6 +20,7 @@
           <label for='email'>Email</label>
           <input id='email' name="email" type="email" placeholder="joe@example.com"/>
         </div>
+        <!--This is called legacy because 'fieldset' doesn't use flexbox, we need to use floats instead-->
         <fieldset class="legacy-form-row">
           <legend>Type of Talk</legend>
           <input type="radio" name="talk-type" value="main-stage" id="talk-type-1"/>
