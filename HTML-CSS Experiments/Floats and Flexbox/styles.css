@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+  /*By adding an overflow: hidden declaration to a container div, we’re telling it to recognize the height of any floated elements it contains.*/
+  overflow: hidden;
 
   background-color: #BAB9B9;
   border: 2px solid red;
