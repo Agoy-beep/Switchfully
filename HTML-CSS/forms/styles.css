@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin:0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -13,6 +13,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  /*vertical alignment*/
   align-items: center;
 }
 
@@ -27,17 +28,17 @@ body {
   padding: 50px;
 }
 
-.speaker-form-header h1 {
+.speaker-form-header h1{
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-.speaker-form {
+.speaker-form{
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
 
-  width: 80%
+  width: 80%;
   padding: 50px;
   margin: 0 0 40px 0;
 }
@@ -50,7 +51,7 @@ body {
   flex-wrap: wrap;
 }
 
-.form-row input[type='text']
+.form-row input[type='text'],
 .form-row input[type='email'] {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
@@ -60,7 +61,7 @@ body {
   font-size: 14px;
 }
 
-.form-row label {
+.form-row label{
   margin-bottom: 15px;
 }
 
@@ -68,7 +69,7 @@ body {
 .form-row input[type='email']:invalid {
   border: 1px solid #D55C5F;
   color: #D55C5F;
-  box-shadow: none;
+  box-shadow: none; /*remove default glow in Firefox*/
 }
 
 .legacy-form-row {
@@ -93,6 +94,13 @@ body {
 .legacy-form-row .radio-label,
 .legacy-form-row input[type='radio'] {
   float: left;
+}
+
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  -webkit-appearance: none;
 }
 
 .form-row textarea {
@@ -132,11 +140,11 @@ body {
   cursor: pointer;
 }
 
-.form-row button:hover{
+.form-row button:hover {
   background-color: #76AEED;
 }
 
-.form button:active {
+.form-row button:active {
   background-color: #407FC7;
 }
 
@@ -145,42 +153,52 @@ body {
   .speaker-form {
     width: 600px;
   }
+
   .form-row {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-start; /*To avoid stretching*/
     margin-bottom: 20px;
   }
-  .form-row input[type='text']
-  .form-row input[type='email']
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],
   .form-row select,
   .form-row textarea{
     width: 250px;
     height: initial;
   }
+
   .form-row label {
     text-align: right;
     width: 120px;
+    /*this manually aligns 'Name' with the input bar*/
     margin-top: 7px;
     padding-right: 20px;
   }
+
   .legacy-form-row {
     margin-bottom: 10px;
   }
+
   .legacy-form-row legend {
     width: 120px;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 20px
   }
+
   .legacy-form-row legend {
     float: left;
   }
+
   .form-row .instructions {
     margin-left: 120px;
   }
+
   .form-row .checkbox-label {
     margin-left: 120px;
     width: auto;
   }
+
   .form-row button {
     margin-left: 120px;
   }
