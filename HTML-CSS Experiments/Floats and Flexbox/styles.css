@@ -1,0 +1,51 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+  background-color: #BAB9B9;
+  border: 2px solid red;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+
+  background-color: #D0CCCC;
+
+  width: 80%;
+  padding: 25px 0px 0px 15px;
+  border-bottom: 2px solid #383838;
+}
+
+.maintitle {
+  flex: 3;
+}
+
+.date {
+  flex: 1;
+}
+
+.mainstory {
+
+  display: block;
+  float: left;
+
+  width: 400px;
+}
+
+.mainpicture {
+  display: block;
+  float: left;
+
+  border: 2px solid green;
+  width: 250px;
+  height: 250px;
+
+}
